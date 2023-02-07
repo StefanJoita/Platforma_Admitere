@@ -1,0 +1,3 @@
+ip: 20.84.67.176
+user: minIO
+pass: Student12345

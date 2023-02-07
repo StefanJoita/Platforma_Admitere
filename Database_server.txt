@@ -1,0 +1,5 @@
+Server name:serverplatformaadmitere.database.windows.net;
+Database name: platforma_admitere
+Connection string for JDBC: "Server=tcp:serverplatformaadmitere.database.windows.net,1433;Initial Catalog=platforma_admitere;Persist Security Info=False;User ID=student;Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" ;
+Server admin: student;
+Password: abcdefg12345!

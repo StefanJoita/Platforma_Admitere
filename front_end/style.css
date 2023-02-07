@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: 'Select photo';
+  display: inline-block;
+  background:  #FFCCCB;
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+.custom-file-input:hover::before {
+  border-color: black;
+}
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #a11b00; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: 	#a11b00; 
+}
+
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    background:#f7f7f7;
+}
+
+section{
+    padding:2rem 9%;
+}
+
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 3.5rem;
+    border-radius: .5rem;
+    font-size: 1.7rem;
+    color:rgb(10, 0, 86);
+    background:rgb(88, 85, 111);
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover{
+    color:rgb(255, 255, 255);
+    background:rgb(10, 0, 86);
+}
+
+.heading{
+    text-align: center;
+    color:#333;
+    font-size: 4rem;
+    padding-bottom: 3rem;
+}
+
+.heading span{
+    color:var(--red);
+    background:var(--light-red);
+    border-radius: .5rem;
+    padding:.2rem 1.5rem;
+}
+
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+    background:#fff;
+    padding:1.5rem 9%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color:rgb(107, 102, 142);
+}
+
+header .logo span{
+    color:rgb(10, 0, 86);
+}
+
+header .navbar a{
+    color:#333;
+    font-size: 2rem;
+    padding:0 1.5rem;
+}
+
+header .navbar a:hover{
+    color:var(--red);
+}
+
+header .icons #menu-bars,
+header .icons a{
+    height:4.5rem;
+    line-height: 4.5rem;
+    width:5rem;
+    font-size: 2rem;
+    margin-right: .5rem;
+    border-radius: .5rem;
+    color:var(--red);
+    background:var(--light-red);
+    text-align: center;
+}
+
+header .icons #menu-bars:hover,
+header .icons a:hover{
+    background-color:var(--red);
+    color:#fff;
+}
+
+header .icons #menu-bars{
+    display: none;
+}
+
+
+.list_box {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list_box form{
+    margin-top: 7rem;
+    background:#fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    border:.1rem solid rgba(0,0,0,.2);
+    width:70rem;
+    padding:2rem;
+}
+
+.list_box form h3{
+    text-align: center;
+    color:#333;
+    font-size: 3rem;
+}
+
+.list_box form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    margin-top: 2rem;
+}
+
+.list_box form .inputBox input,
+.list_box form .inputBox select{
+    flex:1 1 25rem;
+    border:.1rem solid #333;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    font-size: 1.5rem;
+    padding:1rem;
+    text-transform: none;
+}
+
+.list_box form .btn{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+
+
+
+.search_box {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search_box form{
+    margin-top: 7rem;
+    background:#fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    border:.1rem solid rgba(0,0,0,.2);
+    width:70rem;
+    padding:2rem;
+}
+
+.search_box form h3{
+    text-align: center;
+    color:#333;
+    font-size: 3rem;
+}
+
+.search_box form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    margin-top: 2rem;
+}
+
+.search_box form .inputBox input,
+.search_box form .inputBox select{
+    flex:1 1 25rem;
+    border:.1rem solid #333;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    font-size: 1.5rem;
+    padding:1rem;
+    text-transform: none;
+}
+
+.search_box form .btn{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+
+
+
+.login{
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login form{
+    margin-top: 7rem;
+    background:#fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    border:.1rem solid rgba(0,0,0,.2);
+    width:70rem;
+    padding:2rem;
+}
+
+.login form h3{
+    text-align: center;
+    color:#333;
+    font-size: 3rem;
+}
+
+.login form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    margin-top: 2rem;
+}
+
+.login form .inputBox input{
+    flex:1 1 25rem;
+    border:.1rem solid #333;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    font-size: 1.5rem;
+    padding:1rem;
+    text-transform: none;
+}
+
+.login form .btn{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+
+.register{
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register form{
+    margin-top: 7rem;
+    background:#fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    border:.1rem solid rgba(0,0,0,.2);
+    width:70rem;
+    padding:2rem;
+}
+
+.register form h3{
+    text-align: center;
+    color:#333;
+    font-size: 3rem;
+}
+
+
+.register form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    margin-top: 2rem;
+}
+
+.register form .inputBox input{
+    flex:1 1 25rem;
+    border:.1rem solid #333;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    font-size: 1.5rem;
+    padding:1rem;
+    text-transform: none;
+}
+
+.register form .btn{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+
+
+
+
+.table-resp {
+  border-collapse: collapse;
+  margin-left: 1em;
+  font-size: 2.5rem;
+  color:rgb(10, 0, 86);
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table-resp th {
+  border: 4px solid black;
+  padding:3px;
+}
+
+.table-resp td {
+  font-weight:bold;
+  border: 3px solid black;
+  padding:3px;
+  text-align:center;
+}
+
+.table-resp td:nth-child(2) {
+    color:black;
+  }
+
+
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 300px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  overflow:hidden;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+
+/* media queries  */
+@media (max-width:991px){
+
+    html{
+        font-size:55%;
+    }
+
+    header{
+        padding:1.5rem 1rem;
+    }
+
+    section{
+        padding:1.5rem;
+    }
+
+}
+
+@media (max-width:800px){
+
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+	
+    header .navbar{
+        position: absolute;
+        left:0; right:0; top:100%;
+        background:#f7f7f7;
+        border-top: .1rem solid #333;
+        border-bottom: .1rem solid #333;
+        transition: .2s linear;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+	
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        display: block;
+        padding:1.5rem;
+        margin:1.5rem;
+        background:#fff;
+        border:.1rem solid #333;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        border-radius: .5rem;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size:50%;
+    }
+
+    .contact .row form .inputBox input{
+        width: 100%;
+    }
+
+}
+
+
+
+
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Admitere</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">   
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <form method="POST"   style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" >
+        <div>
+          <label for="token" style="font-size:20px">Apasa Send Code pentru a trimite codul de autentificare pe mailul tau! Dupa ce ai primit codul introdu-l si apasa Corect!</label>
+          <input type="text" name="code" pattern="\d{5}" title="Please enter a 5-digit token." style="width: 300px; height: 50px; background-color: #ccc;">
+        </div>
+        <button type="button" name="corect" id="corect" class="btn">Corect</button>
+        <button type="button" id="send-code-button" class="btn">Send code</button>
+      </form>
+    
+      <script src="2fa.js"></script>
+</body>
+</html>

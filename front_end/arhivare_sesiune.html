@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATM Admitere</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <header>
+      <a href="admin.html"  onclick="location.href=this.href+'?email=' + encodeURIComponent(email);return false;" class="logo"><span>ATM</span>Admitere</a>
+
+      <nav class="navbar">
+        <a href="arhivare_sesiune.html"  onclick="location.href=this.href+'?email=' + encodeURIComponent(email);return false;" >Arhivare sesiune</a>
+        <a href="admin.html"  onclick="location.href=this.href+'?email=' + encodeURIComponent(email);return false;" >Creare conturi</a>
+        <a href="edit_admitere.html"  onclick="location.href=this.href+'?email=' + encodeURIComponent(email);return false;" >Editare admitere</a>
+      </nav>
+      <h2>Sunteți logat ca <span id="myEmail"></span>/ADMIN</h2>
+      <h2><a href="#" onclick="logout()">Delogare</a></h2>
+    </header>
+
+    <section class="search_box" id="search_box">
+        <form>
+          <h3>Arhivati sesiunea curenta!</h3>
+          <input type="submit" name="arhivare-sesiune" id="arhivare-sesiune" class="btn" value="Download"/>
+        </form>
+        <form>
+          <h3>Ierarhizati candidatii!</h3>
+          <button type="button" id="ierarhizare-candidati" class="btn">Download</button>
+        </form>
+    </section>
+
+    <script src="arhivare_sesiune.js"></script>
+    <script src="delogare.js"></script>
+  </body>
+</html>

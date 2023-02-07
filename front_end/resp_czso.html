@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATM Admitere</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="resp_czso.html" onclick="location.href=this.href+'?email=' + encodeURIComponent(email);return false;"  class="logo"><span>ATM</span>Admitere</a>
+
+      <nav class="navbar"></nav>
+      <h2>Sunteți logat ca <span id="myEmail"></span>/CZSO</h2>
+      <h2><a href="#" onclick="logout()">Delogare</a></h2>
+    </header>
+
+    <section class="search_box" id="search_box">
+      <form class="formCandidat">
+        <h3>Introduceți datele personale ale candidatului!</h3>
+
+        <div class="inputBox">
+          <input type="search" name="CNP" placeholder="CNP" />
+          <input type="search" name="email" placeholder="Adresă email" />
+          <input type="search" name="nume" placeholder="Nume" />
+          <input type="search" name="telefon" placeholder="Număr de telefon" />
+        </div>
+        <input
+          type="submit"
+          name="search"
+          value="Trimite informații"
+          class="btn"
+          id="sendInfo"
+        />
+        <input value="Reset" class="btn" id="resetInfo" />
+      </form>
+    </section>
+    <script src="resp_czso.js"></script>
+    <script src="delogare.js"></script>
+  </body>
+</html>

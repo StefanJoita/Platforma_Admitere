@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATM Admitere</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <header>
+      <a href="admin.html" onclick="location.href=this.href+'?email=' + encodeURIComponent(email);return false;" class="logo"><span>ATM</span>Admitere</a>
+
+      <nav class="navbar">
+        <a href="arhivare_sesiune.html" onclick="location.href=this.href+'?email=' + encodeURIComponent(email);return false;">Arhivare sesiune</a>
+        <a href="admin.html" onclick="location.href=this.href+'?email=' + encodeURIComponent(email);return false;">Creare conturi</a>
+        <a href="edit_admitere.html" onclick="location.href=this.href+'?email=' + encodeURIComponent(email);return false;">Editare admitere</a>
+      </nav>
+      <h2>Sunteți logat ca <span id="myEmail"></span>/ADMIN</h2>
+      <h2><a href="#" onclick="logout()">Delogare</a></h2>
+    </header>
+
+    <section class="search_box" id="search_box">
+      <form>
+        <h3>Creați cont pentru secretar sau responsabil CZSO!</h3>
+
+        <div class="inputBox">
+          <select name="roles" id="">
+            <option value="def" hidden>Tip cont</option>
+            <option value="1">Responsabil CZSO</option>
+            <option value="2">Secretar</option>
+          </select>
+          <input type="search" name="CNP" placeholder="CNP" id="" />
+          <input type="search" name="email" placeholder="Adresă mail" id="" />
+          <input
+            type="search"
+            name="nume"
+            placeholder="Nume utilizator"
+            id=""
+          />
+          <input type="search" name="telefon" placeholder="Număr de telefon" />
+        </div>
+
+        <input
+          type="submit"
+          name="search"
+          value="Creare cont"
+          class="btn"
+          id="sendInfo"
+        />
+        <input
+          type="submit"
+          name="reset"
+          value="Reset"
+          class="btn"
+          id="resetInfo"
+        />
+      </form>
+    </section>
+
+    <script src="admin.js"></script>
+    <script src="delogare.js"></script>
+  </body>
+</html>

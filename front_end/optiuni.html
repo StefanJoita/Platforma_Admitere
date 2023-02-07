@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Admitere</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">   
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+  font-size: 28px;
+}
+table {
+  margin: 0 auto;
+}
+</style>
+<body>
+<header>
+    <a href="candidat.html" onclick="location.href=this.href+'?email=' + encodeURIComponent(email);return false;" class="logo"><span>ATM</span>Admitere</a>
+
+    <nav class="navbar">
+        <a href="candidat.html" onclick="location.href=this.href+'?email=' + encodeURIComponent(email);return false;">Editare documente</a>
+        <a href="specializari.html" onclick="location.href=this.href+'?email=' + encodeURIComponent(email);return false;">Specializări și locuri disponibile</a>
+        <a href="optiuni.html" onclick="location.href=this.href+'?email=' + encodeURIComponent(email);return false;">Alegerea opțiunilor de admitere</a>
+    </nav>
+    <h2>Sunteți logat ca <span id="myEmail"></span>/CANDIDAT</h2>
+    <h2><a href="#" onclick="logout()">Delogare</a></h2>
+
+</header>
+
+
+
+<section class="search_box" id="search_box">
+
+    <form method="POST">
+
+        <h3>Completați opțiunile în ordinea dorită!</h3>
+
+        <div class="inputBox">
+            <table>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        <input type="submit" name="sendList" value="Trimite optiuni" class="btn" id="sendList">
+
+    </form>
+
+</section>
+<script src="optiuni.js"></script>
+<script src="delogare.js"></script>
+</body>
+</html>

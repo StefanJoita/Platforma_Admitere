@@ -1,0 +1,41 @@
+server:
+  port: 8081
+
+spring:
+  servlet:
+    multipart:
+      max-request-size: 215MB
+      max-file-size: 200MB
+  datasource:
+    username: student@serverplatformaadmitere
+    password: abcdefg12345!
+    url: jdbc:sqlserver://serverplatformaadmitere.database.windows.net:1433;database=platforma_admitere
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    database: mysql
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServerDialect
+        globally_quoted_identifiers: true
+    hibernate:
+      ddl-auto: update
+    spring:
+      mail:
+        properties:
+          mail:
+            smtp:
+              starttls:
+                enable: 'true'
+              auth: 'true'
+        host: smtp.gmail.com
+        username: platforma.admitere@gmail.com
+        password: idqcvvxaztmmlhiq
+        port: '587'
+
+
+
+rsa:
+  private-key: classpath:certs/private.pem
+  public-key: classpath:certs/public.pem

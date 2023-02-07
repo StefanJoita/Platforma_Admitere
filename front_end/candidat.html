@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ATM Admitere</title>
+  <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <a href="candidat.html" onclick="location.href=this.href+'?email=' + encodeURIComponent(email);return false;" class="logo"><span>ATM</span>Admitere</a>
+
+  <nav class="navbar">
+    <a href="candidat.html" onclick="location.href=this.href+'?email=' + encodeURIComponent(email);return false;">Editare documente</a>
+    <a href="specializari.html" onclick="location.href=this.href+'?email=' + encodeURIComponent(email);return false;">Specializări și locuri disponibile</a>
+    <a href="optiuni.html" onclick="location.href=this.href+'?email=' + encodeURIComponent(email);return false;">Alegerea opțiunilor de admitere</a>
+  </nav>
+  <h2>Sunteți logat ca <span id="myEmail"></span>/CANDIDAT</h2>
+  <h2><a href="#" onclick="logout()">Delogare</a></h2>
+</header>
+
+<section class="search_box" id="search_box">
+  <form>
+    <div id="container"></div>
+
+    <div class="inputBox">
+
+      <input
+              type="file"
+              name="arhiva"
+              id="arhiva"
+              accept=".zip"
+              pattern=".+\.zip$"
+      />
+    </div>
+
+    <input
+            type="submit"
+            name="search"
+            value="Trimite documente"
+            class="btn"
+            id="sendFiles"
+    />
+    <input
+            type="submit"
+            name="reset"
+            value="Reset"
+            class="btn"
+            id="resetInfo"
+    />
+    <button type="button" id="generate-legitimatie" class="btn">Legitimatie</button>
+  </form>
+</section>
+<script src="candidat.js"></script>
+<script src="legitimatie.js"></script>
+<script src="delogare.js"></script>
+</body>
+</html>

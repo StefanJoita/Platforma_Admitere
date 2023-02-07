@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Admitere</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">   
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+
+<header>
+
+    <a href="candidat.html" onclick="location.href=this.href+'?email=' + encodeURIComponent(email);return false;" class="logo"><span>ATM</span>Admitere</a>
+
+    <nav class="navbar">
+        <a href="candidat.html" onclick="location.href=this.href+'?email=' + encodeURIComponent(email);return false;">Editare documente</a>
+        <a href="specializari.html" onclick="location.href=this.href+'?email=' + encodeURIComponent(email);return false;">Specializări și locuri disponibile</a>
+        <a href="optiuni.html" onclick="location.href=this.href+'?email=' + encodeURIComponent(email);return false;">Alegerea opțiunilor de admitere</a>
+    </nav>
+    <h2>Sunteți logat ca <span id="myEmail"></span>/CANDIDAT</h2>
+    <h2><a href="logout.html">Delogare</a></h2>
+
+</header>
+
+
+
+<section class="search_box" id="search_box">
+<!--        <tbody>-->
+<!--            <tr>-->
+<!--            <td>Calculatoare</td>-->
+<!--            <td>output baza date</td>-->
+<!--            </tr>-->
+<!--        </tbody>-->
+    <table class="table-resp">
+        <thead>
+        <tr>
+            <th ><i>Specializări</i></th>
+            <th ><i>locuri</i></th>
+        </tr>
+        <thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+</section>
+<script src="specializari.js"></script>
+<script src="delogare.js"></script>
+
+
+</body>
+</html>
